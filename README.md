@@ -56,7 +56,7 @@ A modern, fully responsive To-Do List web application built using HTML, CSS, and
 
 ## 📸 Preview
 
-![App Screenshot](preview.png) <!-- Replace with your screenshot file name -->
+
 
 ---
 
@@ -66,9 +66,6 @@ A modern, fully responsive To-Do List web application built using HTML, CSS, and
 ├── index.html
 ├── style.css
 ├── script.js
-├── assets/
-│   ├── icons/
-│   └── confetti.js
 ```
 
 ---
@@ -105,3 +102,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 **Built with ❤️ for productivity and fun!**
+
