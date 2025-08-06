@@ -1,0 +1,153 @@
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --primary: #007bff;
+  --card: #f0f0f0;
+  --completed: #d4edda;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+  --primary: #90caf9;
+  --card: #2c2c2c;
+  --completed: #2e7d32;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+#themeToggle {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+#taskInput {
+  flex: 1;
+  min-width: 250px;
+}
+
+#taskInput,
+#searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  font-size: 1rem;
+}
+#addBtn {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: var(--card);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+li.completed {
+  background-color: var(--completed);
+  text-decoration: line-through;
+  transform: scale(1.02);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+
+button.delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+select, input[type="date"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--bg);
+  color: var(--text);
+}
+
+li .meta {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.badge {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.Work { background: #007bff; }
+.badge.Personal { background: #28a745; }
+.badge.Urgent { background: #dc3545; }
