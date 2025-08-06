@@ -55,6 +55,7 @@ A modern, fully responsive To-Do List web application built using HTML, CSS, and
 ---
 
 ## 📸 Preview
+<img width="602" height="269" alt="image" src="https://github.com/user-attachments/assets/c37a9658-0e93-420c-8386-4b1671d72acd" />
 
 
 
@@ -102,4 +103,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 **Built with ❤️ for productivity and fun!**
+
 
